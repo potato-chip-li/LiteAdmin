@@ -1,0 +1,116 @@
+:root {
+  --li-color: #165099;
+  --li-thicker-color: #14437d;
+  --li-color-hover: #093b70;
+  --li-color-border: #032947;
+  --font-color-white: #ffffff;
+  --font-color-black: #000000;
+  --app-main-backgroundcolor: #ececec;
+  --container-width: calc(100% - 200px);
+  --app-main-height: calc(100% - 110px);
+}
+
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4493960 */
+  src: url('iconfont.woff2') format('woff2'),
+       url('iconfont.woff') format('woff'),
+       url('iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-RectangleCopy:before {
+  content: "\e6a4";
+}
+
+.icon-RectangleCopy1:before {
+  content: "\e6a5";
+}
+
+.icon-RectangleCopy2:before {
+  content: "\e6a2";
+}
+
+.icon-RectangleCopy3:before {
+  content: "\e6a6";
+}
+
+.icon-RectangleCopy4:before {
+  content: "\e6a7";
+}
+
+.icon-RectangleCopy5:before {
+  content: "\e6a8";
+}
+
+.icon-RectangleCopy6:before {
+  content: "\e6a9";
+}
+
+.icon-RectangleCopy7:before {
+  content: "\e6ab";
+}
+
+.icon-RectangleCopy8:before {
+  content: "\e6ac";
+}
+
+.icon-RectangleCopy9:before {
+  content: "\e6ad";
+}
+
+.icon-RectangleCopy10:before {
+  content: "\e6af";
+}
+
+.icon-RectangleCopy11:before {
+  content: "\e6b0";
+}
+
+.icon-RectangleCopy12:before {
+  content: "\e6b2";
+}
+
+.icon-RectangleCopy13:before {
+  content: "\e6b3";
+}
+
+.icon-RectangleCopy14:before {
+  content: "\e6b4";
+}
+
+.icon-RectangleCopy15:before {
+  content: "\e6c2";
+}
+
+.icon-RectangleCopy16:before {
+  content: "\e6c9";
+}
+
+.icon-RectangleCopy17:before {
+  content: "\e6de";
+}
+
+.icon-RectangleCopy18:before {
+  content: "\e6df";
+}
+
+.icon-RectangleCopy19:before {
+  content: "\e6e0";
+}
+
+
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+} */
+

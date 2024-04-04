@@ -1,0 +1,3 @@
+<template>
+    echarttwo
+</template>

@@ -1,0 +1,3 @@
+<template>
+    echartone
+</template>
