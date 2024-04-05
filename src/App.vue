@@ -3,6 +3,7 @@ import { ref } from 'vue'
 </script>
 
 <template>
-
   <RouterView></RouterView>
 </template>
+
+<style></style>

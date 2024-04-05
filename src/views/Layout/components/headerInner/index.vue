@@ -1,7 +1,7 @@
 <template>
     <div class="left-header">
         <div class="shrink_nav_bar" @click="console.log('收缩导航栏')">
-            <i class=" iconfont">&#xe6ac;</i>
+            <span @click="shrink_nav_bar">{{ isshrink ? '➡️' : '⬅️' }}</span>
         </div>
         <RouterLink to="/home"><strong>首页</strong></RouterLink>
         <div class="link-list" v-for="i in crumbs_list ">
@@ -23,17 +23,18 @@
     </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
+const emit = defineEmits(['toggleWidth'])
 import floatingWindow from '../floatingWindow/index.vue'
-import { watch, ref, onMounted } from 'vue';
+import { watch, ref } from 'vue';
 import { useRoute } from 'vue-router';
-
-
 
 
 const crumbs_list = ref([])
 const route = useRoute()
 const content = document.getElementById('content')
+const isshrink = ref(false)
+
 const toggleFullScreen = function () {
     if (content.requestFullscreen) {
         content.requestFullscreen();
@@ -45,17 +46,17 @@ const toggleFullScreen = function () {
         content.msRequestFullscreen();
     }
 }
-
+const shrink_nav_bar = () => {
+    emit('toggleWidth')
+    isshrink.value = !isshrink.value
+}
 
 
 watch(
     () => route.fullPath,
     (newValue, oldValue) => {
-        let temp_list = route.matched
-        temp_list.shift()
-        crumbs_list.value = temp_list
+        crumbs_list.value = route.matched.slice(1)
     },
-    { immediate: true }
 );
 
 </script>

@@ -55,7 +55,7 @@ console.log(user.value)
 
 </script>
 
-<style>
+<style scoped>
 .login-page {
     position: relative;
     background-image: url('../../assets/bg.png');
