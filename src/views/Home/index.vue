@@ -85,7 +85,7 @@ const someData = useDataStore()
 
 .i-write {
     border-radius: 10px;
-    background-color: antiquewhite;
+    background-color: white;
     color: var(--li-color);
     height: 60px;
     font-weight: bold;
@@ -102,7 +102,7 @@ const someData = useDataStore()
 
 .summary-graph>* {
     flex: 1;
-    background-color: palevioletred;
+    background-color: white;
     border: solid var(--li-color) 2px;
     border-radius: 20px;
     color: var(--li-color);

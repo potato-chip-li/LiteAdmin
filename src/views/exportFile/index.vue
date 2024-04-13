@@ -5,6 +5,15 @@
     </div>
 </template>
 
+<script setup>
+function exportRawFile() {
+    window.open("https://github.com/potato-chip-li/bookManage")
+}
+function exportZipFile() {
+    window.open("https://github.com/potato-chip-li/bookManage/archive/refs/heads/main.zip")
+}
+</script>
+
 <style>
 .exportfile-container {
     margin: 10px;

@@ -10,7 +10,7 @@ export const useDataStore = defineStore('someData', () => {
     "退货量":10
   })
 
- const myExplanation = "嗨，我是作者本人，目前还是一名前端学习者，该项目除了使用了echarts没有使用其他外部ui，但本人coding水平可能不太高，敬请谅解，在导航栏的外部链接中有该项目的GitHub地址，下面手写两个统计图玩玩"
+ const myExplanation = "嗨，我是作者本人，目前还是一名前端学习者，该项目除了使用了echarts没有使用其他外部ui，在导航栏的外部链接中有该项目的GitHub地址，下面手写两个统计图玩玩"
 
  const chartData_1={
     title:'商品类别',
