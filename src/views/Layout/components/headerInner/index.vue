@@ -1,7 +1,7 @@
 <template>
     <div class="left-header">
         <div class="shrink_nav_bar" @click="console.log('收缩导航栏')">
-            <span @click="shrink_nav_bar">{{ isshrink ? '➡️' : '⬅️' }}</span>
+            <span @click="shrink_nav_bar" style="cursor: pointer;">{{ isshrink ? '➡️' : '⬅️' }}</span>
         </div>
         <RouterLink to="/home"><strong>首页</strong></RouterLink>
         <div class="link-list" v-for="i in crumbs_list ">
@@ -17,9 +17,9 @@
             <RouterLink to="/manage">⚙️</RouterLink>
         </div>
         <div class="my-avatar">😋</div>
-        <Transition>
-            <floatingWindow class="hide"></floatingWindow>
-        </Transition>
+
+        <floatingWindow class="hide"></floatingWindow>
+
     </div>
 </template>
 

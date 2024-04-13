@@ -8,7 +8,7 @@
   --app-main-backgroundcolor: #ececec;
   --container-width: calc(100% - 200px);
   --app-main-height: calc(100% - 110px);
-  --table--width: calc(100% - 20px)
+  --content--w-and-h: calc(100% - 20px)
 }
 
 

@@ -6,9 +6,7 @@
         </div>
 
         <div class="app-main">
-            <Transition name="togglePage">
-                <RouterView></RouterView>
-            </Transition>
+            <RouterView></RouterView>
         </div>
         <div class="footer">
             <span>2024 © LiteAdmin By Hun.</span>
@@ -73,15 +71,5 @@ const toggleWidth = () => {
     width: 100%;
     text-align: center;
     line-height: 30px;
-}
-
-.togglePage-enter-active,
-.togglePage-leave-active {
-    transition: opacity 0.5s ease;
-}
-
-.togglePage-enter-from,
-.togglePage-leave-to {
-    opacity: 0;
 }
 </style>

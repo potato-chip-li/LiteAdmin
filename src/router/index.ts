@@ -46,6 +46,7 @@ const router = createRouter({
           path: '/echarts',
           name: 'echarts',
           component: () => import('@/views/Echarts/index.vue'),
+          redirect: '/echarts/echartone',
           children: [
             {
               path: 'echartone',
