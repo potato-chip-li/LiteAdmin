@@ -23,8 +23,11 @@ coverage
 .idea
 *.suo
 *.ntvs*
-*.njsproj
+*.njsprojaaaaaaaaaaaa
 *.sln
 *.sw?
 
 *.tsbuildinfo
+
+# add
+test.js

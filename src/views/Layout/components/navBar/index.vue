@@ -77,18 +77,18 @@
         </li>
         <ul v-show="screen_islist">
             <li>
-                <RouterLink to="/screen/screenone">
+                <a href="./static/screenOne/index.html" target="_blank">
                     <span class="cell-one">📟</span>
-                    <span class="cell-two">使用流程图</span>
+                    <span class="cell-two">大屏1</span>
                     <span class="cell-three">&nbsp;</span>
-                </RouterLink>
+                </a>
             </li>
             <li>
-                <RouterLink to="/screen/screentwo">
+                <a href="./static/screenTwo/index.html" target="_blank">
                     <span class="cell-one">📟</span>
-                    <span class="cell-two">迁徙图</span>
+                    <span class="cell-two">大屏2</span>
                     <span class="cell-three">&nbsp;</span>
-                </RouterLink>
+                </a>
             </li>
         </ul>
         <li>
@@ -142,6 +142,7 @@ const isshrink = ref({
     navwidth: '12vw',
     label: 'LiteAdmin'
 })
+
 
 watch(
     props,

@@ -9,6 +9,7 @@ const router = createRouter({
       path: '/',
       name: 'layout',
       component: Layout,
+      redirect: '/home',
       children: [
         {
           path: '/home',
@@ -65,23 +66,23 @@ const router = createRouter({
           name: 'Excel&Zip',
           component: () => import('@/views/exportFile/index.vue')
         },
-        {
-          path: '/screen',
-          name: '可视化大屏',
-          component: () => import('@/views/Screen/index.vue'),
-          children: [
-            {
-              path: 'screenone',
-              name: '屏幕1',
-              component: () => import('@/views/Screen/screenOne/index.vue')
-            },
-            {
-              path: 'screentwo',
-              name: '屏幕2',
-              component: () => import('@/views/Screen/screenTwo/index.vue')
-            },
-          ]
-        },
+        // {
+        //   path: '/screen',
+        //   name: '可视化大屏',
+        //   component: () => import('@/views/Screen/index.vue'),
+        //   children: [
+        //     {
+        //       path: 'screenone',
+        //       name: '屏幕1',
+        //       component: () => import('@/views/Screen/screenOne/index.vue')
+        //     },
+        //     {
+        //       path: 'screentwo',
+        //       name: '屏幕2',
+        //       component: () => import('@/views/Screen/screenTwo/index.vue')
+        //     },
+        //   ]
+        // },
         {
           path: '/componentManage',
           name: '组件管理',
